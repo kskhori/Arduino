@@ -1,8 +1,11 @@
 # This page is tutoreal for ROS-based Arduino program
 
 ## Connect your PC & Arduino devices
-
+To Controll Pump & Solenoid Nozzle
+![Device Configuration](image/pump_circuit.png)
+To Controll Laser Distance Sensor
 ![Device Configuration](image/laser_circuit.png)
+
 
 ## Getting started
 First of all please download & install Arduino IDE from official page.
