@@ -1,5 +1,9 @@
 # This page is tutoreal for ROS-based Arduino program
 
+## Connect your PC & Arduino devices
+
+![Device Configuration](laser_circuit.pdf "Connection")
+
 ## Getting started
 First of all please download & install Arduino IDE from official page.
     https://www.arduino.cc/en/software   
