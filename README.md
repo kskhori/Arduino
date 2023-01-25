@@ -1,13 +1,11 @@
-# Arduino
-
-
+# This page is tutoreal for ROS-based Arduino program
 
 ## Getting started
-First of all please download & install Arduino IDE from [official page](https://www.arduino.cc/en/software).
-
+First of all please download & install Arduino IDE from official page.
+    https://www.arduino.cc/en/software   
 Then, you can edit .ino files.
 
-## Run the code as ros node
+## Run the code as ros node on Linux PC
 
 ```
 cd <your workspace>
@@ -15,14 +13,16 @@ cd <your workspace>
 rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0
 ```
 
-## Integrate with your tools
+## 2nd Device
+```
+rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1 __ns:=/laser
+```
+You can check Distance data by typing like 
+```
+rostopic echo /laser/laser_d3
+```
 
+## Something Wrong?
 
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
+Please be careful with port and namespace
+You may run same node.
